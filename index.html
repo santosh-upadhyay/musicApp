@@ -86,7 +86,17 @@
             </ul>
             <div class="search">
                 <i class="bi bi-search"></i>
-                <input type="text" placeholder="Search Music...">
+                <input id="input" type="text" placeholder="Search Music...">
+            
+            <div class="search_results">
+                <!-- <a href="" class="card">
+                    <img src="img/1.jpg" alt="">
+                    <div class="content">
+                        On My Way
+                        <div class="subtitle">Alan Walker</div>
+                    </div> -->
+                <!-- </a> -->
+                </div>
             </div>
             <div class="user">
                 <img src="img/user.jpg" alt="User" title="SKU (Santosh Upadhyay)">
@@ -171,7 +181,7 @@
                     </div>
                     <h5>On My Way
                         <br>
-                        <div class="subtitle">Alan Walker</div>
+                        <div class="subtitle"></div>
                     </h5>
                 </li>
                 <li class="songItem">
@@ -216,7 +226,7 @@
             </div>
             <div class="item">
                 <li>
-                    <img src="img/arjit.jpg" alt="Arjit Singh" title="Arjit Singh">
+                   <a href="./arjit.html"> <img src="img/arjit.jpg" alt="Arjit Singh" title="Arjit Singh"></a>
                 </li>
                 <li>
                     <img src="img/alan.jpg" alt="Alan Walker" title="Alan Walker">
@@ -265,9 +275,12 @@
             <div class="subtitle">Bankim Chandra</div>
         </h5>
         <div class="icon">
+            <i class ="bi shuffle bi-music-note-beamed">next</i>
             <i class="bi bi-skip-start-fill" id="back"></i>
             <i class="bi bi-play-fill" id="masterPlay"></i>
             <i class="bi bi-skip-end-fill" id="next"></i>
+            <!-- <a href="audio/12.mp3" download="" id="download_music"><i class="bi bi-cloud-arrow-down-fill" id="download_music"></i></a> -->
+            <a href=""  id="download_music"><i class="bi bi-cloud-arrow-down-fill" id="download_music"></i></a>
         </div>
         <span id="currentStart">0:00</span>
         <div class="bar">
