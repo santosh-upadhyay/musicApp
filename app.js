@@ -101,9 +101,26 @@ songs.forEach(element =>{
     </div> `
         search_results.appendChild(card)
 })
-let input = document.getElementById('input');
-input.addEventListener('keyup',()=>{
+let input = document.getElementsByTagName('input')[0];
+     input.addEventListener('keyup',()=>{
     let input_value = input.value.toUpperCase()
+    let items = search_results.getElementsByTagName('a')
+
+for(let index = 0;index<items.length;index++){
+    let as =  items[index].getElementsByClassName('content')[0]
+    let text_value = as.textContent|| as.innerHTML;
+    
+    if (text_value.toUpperCase().indexOf(input_value)>-1){
+            items[index].style.display = "flex";
+    } else{
+            items[index].style.display = "none";
+    }
+    if(input.value ==0){
+        search_results.style.display="none";
+    }else{
+        search_results.style.display="";
+    }
+}
 })
 // search data end
 
